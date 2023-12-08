@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-function Result({ result }) {
+function Result({ result, openDetail }) {
   return (
-    <div className="result  ">
+    <div className="result  " onClick={(e) => openDetail(result.imdbID)}>
       {console.log(result)}
       {/* <h1>{result.title}</h1> */}
       <div className="border border-dark border-4">
